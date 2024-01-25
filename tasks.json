@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Posprzątać pokój",
+        "status": false
+    },
+    {
+        "id": 2,
+        "name": "Posprzątać pokój",
+        "status": false
+    },
+    {
+        "id": 3,
+        "name": "Posprzątać pokój",
+        "status": false
+    },
+    {
+        "id": 4,
+        "name": "Posprzątać pokój",
+        "status": false
+    }
+]
