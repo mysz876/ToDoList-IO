@@ -18,7 +18,6 @@ public class Manager {
             File file = new File(this.file);
             ObjectMapper mapper = new ObjectMapper();
             this.tasks = mapper.readValue(file, new TypeReference<List<Task>>(){});
-            System.out.println(tasks.size());
         } catch (IOException e) {
             String msg = "Wystąpił problem podczas odczyty listy zadań z pliku. Zainicjowano pustą listę.";
             JOptionPane.showMessageDialog(null, msg, "Oped File - Error", JOptionPane.WARNING_MESSAGE);
@@ -32,7 +31,6 @@ public class Manager {
     public void createTask(String taskName) {
         int id = tasks.size() + 1;
         tasks.add(new Task(taskName,false));
-        System.out.println(tasks.size());
     }
 
     public void saveTasks() {
@@ -40,7 +38,6 @@ public class Manager {
         try {
             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(this.file));
             bufferedWriter.write(mapper.writeValueAsString(this.tasks));
-            System.out.println(mapper.writeValueAsString(this.tasks));
             bufferedWriter.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
