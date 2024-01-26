@@ -1,22 +1,18 @@
 [
-    {
-        "id": 1,
-        "name": "Posprzątać pokój",
-        "status": false
-    },
-    {
-        "id": 2,
-        "name": "Posprzątać pokój",
-        "status": false
-    },
-    {
-        "id": 3,
-        "name": "Posprzątać pokój",
-        "status": false
-    },
-    {
-        "id": 4,
-        "name": "Posprzątać pokój",
-        "status": false
-    }
+	{
+		"name":"Posprzątać pokój",
+		"status":true
+	},
+	{
+		"name":"Wyprowadzić psa",
+		"status":false
+	},
+	{
+		"name":"Zrobić lekcje z siostrą",
+		"status":false
+	},
+	{
+		"name":"Ugotować obiad",
+		"status":false
+	}
 ]
